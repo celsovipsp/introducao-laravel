@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/produtos/{descricao?}', function ($descricao = null ) {
+    return "<h1>Descricao: {$descricao}</h1>";
+});
+
+Route::get('/usuarios', function (){
+    return "<h1>Lista de Usuários</h1>";
+});
